@@ -1,0 +1,10 @@
+--- origsrc/mimetic-0.9.8/mimetic/libconfig.h	2014-06-17 03:12:00.000000000 -0500
++++ src/mimetic-0.9.8/mimetic/libconfig.h	2016-08-09 03:02:12.599603500 -0500
+@@ -43,6 +43,7 @@ typedef unsigned int uint;
+ #ifdef CONFIG_UNIX
+ #include <cstdlib>
+ #define PATH_SEPARATOR '/'
++typedef unsigned int uint;
+ typedef unsigned int uint32;
+ struct newline_traits
+ {

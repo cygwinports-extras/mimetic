@@ -1,0 +1,11 @@
+--- origsrc/mimetic-0.9.8/mimetic/Makefile.am	2014-06-17 03:12:00.000000000 -0500
++++ src/mimetic-0.9.8/mimetic/Makefile.am	2016-08-09 01:34:13.763641800 -0500
+@@ -22,7 +22,7 @@ libmimetic_la_SOURCES=body.cxx contenttr
+ libmimetic_la_LIBADD =codec/libmimeticcodec.la os/libmimeticos.la rfc822/libmimeticrfc822.la 
+ 
+ # ver: interface:revision:age
+-libmimetic_la_LDFLAGS= -version-info 0:0:0
++libmimetic_la_LDFLAGS= -version-info 0:0:0 -no-undefined
+ 
+ 
+ config_win32.h: config_win32.h.in
